@@ -1,10 +1,10 @@
 // Esse código é um exemplo de implementação de uma classe carro em Java, que implementa a interface Comparable para permitir a comparação entre objetos da classe carro com base na prioridade.
-public class carro implements Comparable<carro>{
+public class Carro implements Comparable<Carro>{
     //Atributos
     private String modelo;
     private int prioridade;
     //Construtor
-    public carro(String modelo, int prioridade) {
+    public Carro(String modelo, int prioridade) {
         this.modelo = modelo;
         this.prioridade = prioridade;
     }

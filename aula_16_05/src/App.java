@@ -5,11 +5,11 @@ import java.util.Queue;
 public class App {
     public static void main(String[] args) throws Exception {
         //pedagio();
-        PriorityQueue<carro> fila = new PriorityQueue<>();
-        fila.add(new carro("Uno", 2));
-        fila.add(new carro("Gol", 2));
-        fila.add(new carro("Ambulância", 1));
-        fila.add(new carro("Polícia", 1));
+        PriorityQueue<Carro> fila = new PriorityQueue<>();
+        fila.add(new Carro("Uno", 2));
+        fila.add(new Carro("Gol", 2));
+        fila.add(new Carro("Ambulância", 1));
+        fila.add(new Carro("Polícia", 1));
 
         //realizando o atendimento do pedágio
         while (!fila.isEmpty()){
