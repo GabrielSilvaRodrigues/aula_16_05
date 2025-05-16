@@ -3,6 +3,9 @@ import java.util.Queue;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        pedagio();
+    }
+    public static void pedagio(){
         //Criar uma fila de veículos
         Queue<String> fila_carros = new LinkedList<>();
 
@@ -21,7 +24,7 @@ public class App {
         while(fila_carros.isEmpty()){
             String carro_removido = fila_carros.poll();
             System.out.println("Carro "+ carro_removido + " liberado no pedágio");
-        } 
+        }
     }
     public static void testeFila(){
         //Criar uma fila de veículos
