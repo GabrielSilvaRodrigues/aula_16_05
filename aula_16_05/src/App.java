@@ -1,9 +1,21 @@
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        pedagio();
+        //pedagio();
+        PriorityQueue<carro> fila = new PriorityQueue<>();
+        fila.add(new carro("Uno", 2));
+        fila.add(new carro("Gol", 2));
+        fila.add(new carro("Ambulância", 1));
+        fila.add(new carro("Polícia", 1));
+
+        //realizando o atendimento do pedágio
+        while (!fila.isEmpty()){
+            Carro carro_removido = fila.poll(); // remove o primeiro da fila
+            System.out.println("Carro removido: " + carro_removido.getModelo());
+        }
     }
     public static void pedagio(){
         //Criar uma fila de veículos
@@ -21,7 +33,7 @@ public class App {
         System.out.println("Situação: " + fila_carros);
 
         //realizando o atendimento no pedágio
-        while(fila_carros.isEmpty()){
+        while(!fila_carros.isEmpty()){
             String carro_removido = fila_carros.poll();
             System.out.println("Carro "+ carro_removido + " liberado no pedágio");
         }
